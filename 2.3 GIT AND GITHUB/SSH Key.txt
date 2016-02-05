@@ -1,0 +1,27 @@
+SSH Help Tips:
+1. Procedure to follow when generate ssh key and put on GitHub
+
+2. How to Review your SSH keys?
+Version 1: Which does not work for me.
+# Find and take a note of your public key fingerprint. 
+# If you're using OpenSSH 6.8 or newer: ssh-add -l -E md5
+# If you're using OpenSSH 6.7 or older:
+$ eval "(ssh-agent -s)"
+$ ssh-add -l
+
+# $ echo $?  will tell if the previous command run successfully: if 0 # means success otherwise not success.
+Link: https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-ssh-keys
+
+Version 2: Which works.
+ls -l ~/.ssh
+# Lists the files in your .ssh directory, if they exist
+$ ssh-keygen -l -f ~/.ssh/github_rsa.pub
+# one kind of format
+$ ssh-keygen -l -f ~/.ssh/github_ras.pub -E md5
+# another format
+
+3. Other things to know:
+# start the ssh-agent in the background
+$ eval "$(ssh-agent -s)"
+Link: http://superuser.com/questions/929566/sha256-ssh-fingerprint-given-by-the-client-but-only-md5-fingerprint-known-for-se
+
