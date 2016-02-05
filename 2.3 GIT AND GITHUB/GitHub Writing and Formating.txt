@@ -6,3 +6,9 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 3. About writing and formatting on GitHub:
 https://help.github.com/articles/about-writing-and-formatting-on-github/
+
+4. Markdown Cheatsheet
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+5. Common markup for Markdown and reStructuredText
+https://gist.github.com/dupuy/1855764
